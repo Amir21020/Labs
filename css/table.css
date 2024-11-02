@@ -20,3 +20,11 @@ caption {
     font-size: 1.5em;
     margin: 10px 0;
 }
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
