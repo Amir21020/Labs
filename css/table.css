@@ -22,9 +22,9 @@ caption {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9; 
+    background-color: green; 
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #ffffff; 
+    background-color: red; 
 }
