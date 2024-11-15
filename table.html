@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/table.css">
+    <link rel="stylesheet" href="/css/form.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -13,7 +14,42 @@
         <a href="table.html">Таблица</a>
     </div>
 
-    <table>
+    <div id="studentForm">
+        <form id="studentForm" method="post" action="#table">
+            <label  for="id">ID:</label>
+            <input type="number" id="id" name="id" required><br>
+        
+            <label for="fullName">ФИО студента:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+        
+            <label for="studentBookNumber">Номер зачётной книжки:</label>
+            <input type="text" id="studentBookNumber" name="studentBookNumber" required><br>
+        
+            <label for="groupNumber">Номер группы:</label>
+            <input type="text" id="groupNumber" name="groupNumber" required><br>
+        
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select><br>
+        
+            <label for="age">Возраст:</label>
+            <input type="number" id="age">
+        
+            <label for="admissionForm">Форма поступления:</label>
+            <input type="text" id="admissionForm" name="admissionForm" required><br>
+        
+            <label for="direction">Название направления:</label>
+            <input type="text" id="direction" name="direction" required><br>
+        
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+
+
+    <table id="table">
         <caption>Данные о студентах</caption>
         <thead>
             <tr>
@@ -27,7 +63,7 @@
                 <th>Название направления</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="studentTableBody">
             <tr>
                 <td>1</td>
                 <td>Иванов Иван Иванович</td>
@@ -80,6 +116,37 @@
             </tr>
         </tbody>
     </table>
+
+    <script>
+        document.getElementById('studentForm').addEventListener('submit',function(event){
+
+            event.preventDefault();
+            const id = document.getElementById('id').value;
+            const fullName = document.getElementById('fullName').value;
+            const studentBookNumber = document.getElementById('studentBookNumber').value;
+            const groupNumber = document.getElementById('groupNumber').value;
+            const gender = document.getElementById('gender').value;
+            const age = document.getElementById('age').value;
+            const admissionForm = document.getElementById('admissionForm').value;
+            const direction = document.getElementById('direction').value;
+
+            const newRow = document.createElement('tr')
+            newRow.innerHTML = `
+                <td>${id}</td>
+                <td>${fullName}</td>
+                <td>${studentBookNumber}</td>
+                <td>${groupNumber}</td>
+                <td>${gender}</td>
+                <td>${age}</td>
+                <td>${admissionForm}</td>
+                <td>${direction}</td>
+            `;
+            
+
+            document.getElementById('studentTableBody').appendChild(newRow);
+            this.reset();
+        });
+    </script>
 
 </body>
 </html>
