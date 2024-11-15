@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/filmNewProject/css/style.css">
+  <title>Document</title>
+</head>
+<body>  
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid myPadding">
+      <a class="navbar-brand" href="#">ЦК</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="info.html">Актер</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="films.html">Фильмы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100" id="navbar-info">
+                <a href="/filmNewProject/info.html" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Меню</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li>
+                        <a href="#photoActor" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Фотографии актера</span></a>
+                    </li>
+                    <li>
+                        <a href="#bestFilm" class="nav-link px-0 align-middle ">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Лучшие фильмы с Робертом Де Ниро</span></a>
+                    </li>
+                    <li>
+                      <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                        <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Краткая биография</span> </a>
+                    <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                          <li class="w-100">
+                              <a href="#birth" class="nav-link px-0"> <span class="d-none d-sm-inline">Где Родился</span></a>
+                          </li>
+                          <li>
+                              <a href="#teaching" class="nav-link px-0"> <span class="d-none d-sm-inline">Где учился</span></a>
+                          </li>
+                          <li>
+                            <a href="#personalLifeInMenu" class="nav-link px-0"> <span class="d-none d-sm-inline">Личная жизнь</span></a>
+                        </li>
+                      </ul>
+                  </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+
+        <div class="col py-3"
+                 data-bs-spy="scroll" 
+                 data-bs-target="#list-example" 
+                 data-bs-offset="50" tabindex="0">
+          <div class="container-fluid">
+      
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner" id="photoActor">
+                <div class="carousel-item active">
+                  <img src="https://www.kino-teatr.ru/news/18881/169785.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/7827/production/_89995703_deniro1_ap.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://i.pinimg.com/736x/d4/07/7e/d4077ec5fd8c2b94b523d9823e79da6b.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="container-sm pt-5" id="bestFilm">
+            <div>
+              <h1 class="display-6 text-center"  >Лучшие фильмы с Робертом Де Ниро</h1>
+            </div>
+            <div class="row">
+              <div class="card" style="width: 18rem;">
+                <img src="https://i.etsystatic.com/10911523/r/il/307df3/2633686848/il_794xN.2633686848_e04s.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Джокер</h5>
+                  <p class="card-text">Действие фильма происходит в 80-е годы. В городе Готэм в скромной квартирке живёт молодой человек по имени Артур Флек. Он работает клоуном. Где-то глубоко в душе Артур понимает, что заслуживает большего. И у него появляется мечта. Вместе с сыном в скромном жилище живёт его мать, Пенни. Она с детства учила сына улыбаться людям. И Артур улыбался.</p>
+                  <a href="https://www.kinopoisk.ru/film/1048334/?utm_referrer=yandex.ru" class="btn btn-primary">Перейти</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/e2f04e72-ed68-40d3-8bf5-d5d9c2a42950/1920x" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Дедушка легкого поведения</h5>
+                  <p class="card-text">После случайной кражи из продуктового магазина из-за проблем с самообслуживанием и создания сцены с менеджером магазина, недавно овдовевшего Эда Марино ( Роберт Де Ниро ) навещает его дочь Салли Марино-Декер ( Ума Турман ), которая хочет ему переехать к ее семье. Эд не хочет покидать свой дом, потому что он все построил сам. Салли, тем не менее, убеждает Эда переехать к ней и дает ему спальню своего сына Питера ( Оукс Фегли ). Питер не рад отдать свою комнату деду и переехать на чердак. Эда приветствуют муж Салли Артур ( Роб Риггл ) и две дочери Миа ( Лаура Марано).) и Дженни (Поппи Ганьон). В первый же день переезда Эд проводит большую часть времени в своей новой комнате, сидя в кресле и глядя на небо, все еще думая о своей покойной жене.</p>
+                  <a href="https://www.kinopoisk.ru/film/998054/" class="btn btn-primary">Перейти</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://static.kinoafisha.info/k/movie_posters/1920x1080/upload/movie_posters/9/7/9/8073979/dd53e71663f75834bb46ce77ed0294bc.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Область тьмы</h5>
+                  <p class="card-text">Сюжет фильма «Области тьмы». Эдди Морра — писатель-неудачник, живущий в Нью-Йорке. Он недавно развелся, пребывает в депрессии и серьезном творческом кризисе. Однажды на улице он встречает своего бывшего шурина, который по секрету рассказывает ему о необычном средстве под названием NZT. Это чудо-таблетки, которые превращают посредственного человека в гения и успешного во всех смыслах уникума. Эдди пробует таблетку и преображается.</p>
+                  <a href="https://www.kinopoisk.ru/film/462606/" class="btn btn-primary">Перейти</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://otvet.imgsmail.ru/download/287654800_e1b69c65123201cb8583609bc1312629_800.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Стажер</h5>
+                  <p class="card-text">Первой задачей для Бена становится задание отправить жакет Джуль в чистку, так как та пролила на него соевый соус.  Поднимаясь за жакетом, Бен  подслушивает разговор Кэмерон с Джуль, о инвесторах, которые думают, что в ОFit все развивается слишком быстро и опытный генеральный директор может справиться лучше + помочь им идти в ногу с успехом. Жюль явно расстроена этой идеей, хотя она признает, что у них есть проблемы. Кэмерон советует ей взглянуть на список кандидатов в руководители и потратить время, чтобы встретиться с ними по одному и решить.</p>
+                  <a href="https://www.kinopoisk.ru/film/677893/" class="btn btn-primary">Перейти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-sm pt-2">
+            <h1 class="display-6 text-center" id="BriefBiography">Краткая информация о Роберте Де Ниро</h1>
+            <div class="row text-center">
+                <div class="col">
+                    <a class="btn btn-primary w-100" id="birth" data-bs-toggle="collapse" href="#wasBorn" role="button" aria-expanded="false" aria-controls="wasBorn">
+                        Где родился
+                    </a>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#studied" aria-expanded="false" aria-controls="studied" id="teaching">
+                        Где учился
+                    </button>
+                </div>
+                <div class="col">
+                    <a class="btn btn-primary w-100" data-bs-toggle="collapse" href="#personalLife" role="button" aria-expanded="false" aria-controls="personalLife" id="personalLifeInMenu">
+                        Личная жизнь
+                    </a>
+                </div>
+            </div>
+          
+            <div class="collapse" id="wasBorn">
+                <div class="card card-body">
+                    Нью-Йорк, США
+                </div>
+            </div>
+            <div class="collapse" id="studied">
+                <div class="card card-body">
+                    Высшая школа музыки, искусства и исполнительского мастерства имени Фьорелло Ла Гуардии в Нью-Йорке
+                </div>
+            </div>
+            <div class="collapse" id="personalLife">
+                <div class="card card-body">
+                    <pre>
+                      Первый брак Робертом Де Ниро был заключён с Дайэнн Эбботт, актрисой и певицей афроамериканского происхождения. Она известна по нескольким небольшим ролям в фильмах мужа: камео в образе певицы из клуба в фильме «Нью-Йорк, Нью-Йорк», Рита в «Короле комедии». Де Ниро удочерил Дрену, ребёнка Дайэнны от её первого брака. Дрена Де Ниро позже часто снималась с приёмным отцом: «Плутовство», «Большие надежды», «Приключения Рокки и Буллвинкля», «Последнее дело Ламарки». От первого брака Де Ниро имеет также сына Рафаэля. Повзрослев, молодой человек пошёл по стопам отца, но быстро разочаровался в актёрской профессии и занялся торговлей недвижимостью. В 1988 году брак Де Ниро и Эбботт распался.
+                      Длительное время артист имел связь с бывшей моделью Туки Смит (также афроамериканкой), не оформляя взаимоотношения юридически. В 1995 году благодаря экстракорпоральному оплодотворению суррогатная мать родила для относительно немолодой пары двух мальчиков-близнецов Джулиана Генри и Аарона Кендрика. Де Ниро часто подчёркивает своё отцовство публично.
+                      В 1997 году Роберт Де Ниро женился во второй раз. Новая избранница — Грейс Хайтауэр, бывшая стюардесса. В 1998 году у них родился сын Эллиот Де Ниро, а в 2011 году — дочь Хелен Грейс Де Ниро. В 2018 пара развелась.
+                      В 2023 году у 79-летнего Де Ниро родилась дочь Джиа Вирджиния Де Ниро-Чен — дочь его новой подруги, тренера по боевым искусствам Тиффани Чен, которая моложе Роберта на 40 лет. Джиа Вирджиния стала седьмым ребёнком Де Ниро
+                    </pre>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
