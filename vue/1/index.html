@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="joystick">
+      <button id="up" class="joy-btn">⬆</button>
+      <button id="left" class="joy-btn">⬅</button>
+      <button id="right" class="joy-btn">➡</button>
+      <button id="down" class="joy-btn">⬇</button>
+    </div>
+    <input type="number" id="speedInput" min="100" max="2000" value="800">
+    <div id="score"></div>
+    <div id="game-board"></div>
+    <div class="controls"></div>
+  </body>
+</html>
