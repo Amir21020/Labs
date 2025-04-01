@@ -8,5 +8,5 @@ export default defineConfig({
     tailwindcss(),
     vue()
   ],
-  base: '/Labs/'
+  base: '/Labs/vue/3'
 })
